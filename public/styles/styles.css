@@ -1,0 +1,248 @@
+body {
+    overflow-x: hidden;
+    background: #C2B3A3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    transition: 300ms all ease-in-out;
+    position: fixed;
+    top: 0;
+    background: transparent;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #000;
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 300px;
+    border-right: 1px solid #000;
+}
+
+.child-variant {
+    border-right: 0px solid #000;
+    border-left: 1px solid #000;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar ul li {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.btn {
+    width: 81px;
+    height: 50px;
+    color: #FFF;
+    background: #000;
+    border-style: none;
+    text-transform: capitalize;
+    transition: 300ms all ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.hero {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    flex-basis: 1;
+    height: 100vh;
+}
+
+.child-flex-hero {
+    width: 33%;
+}
+
+.child-flex-hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-flex-hero-center span {
+    text-transform: uppercase;
+}
+
+.child-flex-hero-center span h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.hero .image-barber {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.yellow-bg {
+    position: absolute;
+    top: 30%;
+    background-color: #F9CF36;
+    z-index: -1;
+    width: 80%;
+    height: 70%;
+}
+
+
+.hero .main__image {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.hero .title {
+    letter-spacing: 0.5px;
+    border-left: 20px solid darkorange;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 20%;
+    align-items: start;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.hero .title span:nth-child(2) {
+    padding-left: 50px;
+}
+
+.services-preview {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.services-preview img {
+    width: 150px;
+    height: auto;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-list li {
+    font-weight: bolder;
+
+}
+
+.haircuts-details {
+    width: 500px;
+}
+
+.haircuts-details .texts {
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    align-self: center;
+    font-weight: bolder;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+button {
+    cursor: pointer ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    background: #000;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+button {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+button span {
+    width: 4px;
+    height: 20px;
+    background: darkorange;
+}
+button i {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.texts span:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+.services-list li:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background: #000;
+}
+
+.image-details {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    overflow: hidden;
+    height: 300px;
+    justify-content: center;
+}
+
+.image-details img {
+    width: 400px;
+    height: auto;
+}
+
+.white-box {
+    position: absolute;
+    background-color: #FFF;
+    top: 20%;
+    z-index: -1;
+    width: 100%;
+    height: 67%;
+}
+.haircuts-details button {
+    margin-top: 150px;
+}
